@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import Navbar from 'components/Navbar'
+import Navbar from '@/components/navbar'
 import Homey from '@/components/Homey'
 import Compro from '@/components/Compro'
 import Service from '@/components/service'
