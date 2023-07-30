@@ -11,6 +11,9 @@ module.exports = {
         'background': "url('/img/BG.svg')",
         'button': "url('/img/button.svg')"
       },
+      screens: {
+        'sm': '640px',
+      },
       fontFamily:{
         'sans' : "'Poppins'"
       }

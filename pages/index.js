@@ -14,13 +14,14 @@ export default function Home() {
       <Head>
         <title>Snaptive</title>
       </Head>
-    <div className="bg-cover bg-[url('/img/BG.svg')] bg-repeat object-cover Sw-16 min-h-screen">
+    <div className="bg-[url('/img/BG.svg')]  bg-cover bg-repeat object-cover sm:bg-[url('/img/BG.svg')]">
+    
     <Navbar/>
     <Homey/>
     <Compro/>
     <Service/>
     <Footer/>
-  </div>
+    </div>
   </div>
   )
 }
