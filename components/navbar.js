@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <nav className="content-center py-10 md:container md:mx-auto flex flex-col md:flex-row md:items-center">
-      <div className="w-full md:w-3/12 py-5 px-20 text-center md:text-left sm:px-30">
+      <div className="w-full md:w-3/12 py-5 px-20 text-center md:text-left sm:py-30">
         <Image src="/img/logo.png" width={100} height={100} alt="Logo" />
       </div>
       <div className="py-10 px-10 md:w-6/12 md:flex md:space-x-6 md:space-y-0 md:justify-center"> {/* Tambahkan md:justify-center disini */}
