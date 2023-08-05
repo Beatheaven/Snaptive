@@ -1,12 +1,11 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Navbar from '@/components/navbar'
-import Homey from '@/components/Homey'
-import Compro from '@/components/Compro'
-import Service from '@/components/service'
-import Footer from '@/components/footer'
-import Head from 'next/head'
-const inter = Inter({ subsets: ['latin'] })
+import dynamic from 'next/dynamic';
+import Head from 'next/head';
+
+const LazyNavbar = dynamic(() => import('@/components/navbar'));
+const LazyHomey = dynamic(() => import('@/components/Homey'));
+const LazyCompro = dynamic(() => import('@/components/Compro'));
+const LazyService = dynamic(() => import('@/components/service'));
+const LazyFooter = dynamic(() => import('@/components/footer'));
 
 export default function Home() {
   return (
@@ -14,14 +13,11 @@ export default function Home() {
       <Head>
         <title>Snaptive</title>
       </Head>
-    <div className="bg-[url('/img/BG.svg')]  bg-cover bg-repeat object-cover sm:bg-[url('/img/BG.svg')]">
-    
-    <Navbar/>
-    <Homey/>
-    <Compro/>
-    <Service/>
-    <Footer/>
+      <div>
+        <LazyHomey />
+        <LazyCompro />
+        <LazyService />
+      </div>
     </div>
-  </div>
-  )
+  );
 }

@@ -2,47 +2,31 @@ import Image from "next/image";
 
 export default function Compro() {
   return (
-    <div id="About" className="container md:py-96 md:mt-32 flex flex-col md:flex-row md:items-center justify-center md:space-x-8">
-      <div className="md:w-1/3 flex justify-center md:justify-start">
-        <div className="image-zoom"> {/* Tambahkan div untuk elemen gambar dan beri kelas CSS "image-zoom" */}
-          <Image
-            src="/img/studio.png"
-            width={500}
-            height={500}
-            alt="Studio"
-          />
+    <div className="bg-cover p-24 bg-[url('/img/BG_2.png')] sm:bg-[url('/img/BG_2.png')]">
+      <main className="flex items-center justify-center h-full p-8">
+        <div className="w-full lg:w-1/3">
+          {/* Konten kiri */}
+          <div className="p-4 rounded shadow">
+            <Image src="/img/studio.png" width={500} height={500} alt="snaptivestudio" />
+          </div>
         </div>
-      </div>
-      <div className="md:w-2/12 flex justify-center items-center"> {/* Menambahkan kelas items-center pada div ini */}
-        <Image
-          src="/img/outline.svg"
-          width={3}
-          height={1}
-          alt="Outline"
-        />
-      </div>
-      <div className="md:w-1/3 text-center md:text-left"> {/* Menambahkan kelas text-center dan md:text-left pada div ini */}
-        <h1 className="font-bold text-3xl md:text-6xl">ABOUT US</h1>
-        <p className="font-normal text-base md:text-lg">
-          Snaptive Studio, berdiri sejak 2022, adalah perusahaan Produk dan Jasa
-        </p>
-        <p className="font-normal text-base md:text-lg">
-          dengan spesialisasi dalam bidang fotografi dan videografi.
-        </p>
-        <p className="font-normal text-base md:text-lg">
-          Berlandaskan cinta dan passion dalam teknologi multimedia,
-        </p>
-        <p className="font-normal text-base md:text-lg">
-          kami siap memenuhi kebutuhan pasar.
-        </p>
-      </div>
-
-      {/* Gaya CSS untuk zoom gambar */}
-      <style jsx>{`
-        .image-zoom {
-          transform: scale(1.5); /* Perbesar gambar sebanyak 1.5 kali */
-        }
-      `}</style>
+        <div className="w-full lg:w-1/3 mt-4 lg:mt-0">
+          {/* Konten tengah */}
+          <div className="ml-40">
+          <Image src="/img/outline.svg" width={3} height={5} alt="snaptivestudio" />
+          </div>
+        </div>
+        <div className="w-full lg:w-1/3 mt-4 lg:mt-0">
+          {/* Konten kanan */}
+          <div className="p-4 rounded shadow">
+            <h2 className="text-6xl font-semibold mb-2">About Us</h2>
+            <p>Snaptive Studio, berdiri sejak 2022, adalah perusahaan Produk dan Jasa
+              dengan spesialisasi dalam bidang fotografi dan videografi.
+              Berlandaskan cinta dan passion dalam teknologi multimedia,
+              kami siap memenuhi kebutuhan pasar.</p>
+          </div>
+        </div>
+      </main>
     </div>
   );
 }
