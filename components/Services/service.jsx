@@ -12,7 +12,7 @@ export default function Service() {
     controls.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
   }, [controls]);
 
-  const LazyFooter = dynamic(() => import('@/components/footer'));
+  const LazyFooter = dynamic(() => import('@/components/Footer/footer'));
 
   return (
     <div className="bg-[url('/img/BG_3.png')] sm:bg-[url('/img/BG_3.png')] bg-cover">

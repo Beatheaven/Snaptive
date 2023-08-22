@@ -14,7 +14,8 @@ export default function Homey() {
   return (
     <div className="bg-[url('/img/BG_1.png')] sm:bg-jade-900] bg-cover md:p-24">
      <nav className="p-4 py-14 flex justify-between items-center">
-      <motion.div className="flex-1">
+      <motion.div className="flex-1"
+      >
         <Image src="/img/logo.png" alt="Logo" width={100} height={100} />
       </motion.div>
       <motion.div
@@ -23,15 +24,15 @@ export default function Homey() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2 }}
       >
-          <motion.a href="/Home" className="mx-2 hover:underline"  whileHover={{ scale: 1.1 }}>Home</motion.a>
+          <motion.a href="/" className="mx-2 hover:underline"  whileHover={{ scale: 1.1 }}>Home</motion.a>
        
-          <motion.a href="/about" className="mx-2 hover:underline" whileHover={{ scale: 1.1 }}>Profile Company</motion.a>
+          <motion.a href="/" className="mx-2 hover:underline" whileHover={{ scale: 1.1 }}>Profile Company</motion.a>
        
-          <motion.a href="/services" className="mx-2 hover:underline" whileHover={{ scale: 1.1 }}>Our Services</motion.a>
+          <motion.a href="/" className="mx-2 hover:underline" whileHover={{ scale: 1.1 }}>Our Services</motion.a>
        
-          <motion.a  href="/contact" className="mx-2 hover:underline" whileHover={{ scale: 1.1 }}>Ongoing Event</motion.a>
+          <motion.a href="/" className="mx-2 hover:underline" whileHover={{ scale: 1.1 }}>Ongoing Event</motion.a>
         
-          <motion.a href="/contact" className="mx-2 hover:underline" whileHover={{ scale: 1.1 }}>Contact</motion.a>
+          <motion.a href="/" className="mx-2 hover:underline" whileHover={{ scale: 1.1 }}>Contact</motion.a>
       </motion.div>
       <div className="flex-1 text-right">
         {/* Tempatkan elemen kosong di sini */}
@@ -60,7 +61,8 @@ export default function Homey() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="flex justify-center md:justify-start shadow"
+              className="flex justify-center md:justify-start"
+              
             >
               <Image
                 src="/img/snaptivestudio.png"

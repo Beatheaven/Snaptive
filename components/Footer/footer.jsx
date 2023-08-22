@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-950/50 py-4 text-center">
+    <footer className="bg-gray-950/50 py-4 text-center shadow">
       <div className="container mx-auto px-4">
         <p className="text-sm text-white">&copy; {new Date().getFullYear()} Snaptive. All rights reserved.</p>
         <p className="text-sm text-white mt-2 sm:mt-0">Bandung Indonesia</p>
