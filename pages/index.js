@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Snaptive</title>
+        <title>Snaptive Studio</title>
         <meta name="google-site-verification" content="EwQnbtgsaQYxfiFS8pB6fZuSkeBVLO2wQcNqd6ASpu0" />
       </Head>
       <div>
